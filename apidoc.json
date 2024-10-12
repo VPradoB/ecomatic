@@ -1,0 +1,7 @@
+{
+  "name": "APITEST",
+  "version": "0.1.0",
+  "description": "Api de ejemplo",
+  "title": "Título de la documentación de mi api",
+  "url" : "http://api.test.com/v1"
+}
