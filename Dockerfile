@@ -1,5 +1,5 @@
 # Dockerfile para producción
-FROM php:7.0-fpm-alpine
+FROM php:7.1-fpm-alpine
 
 # Instalar dependencias necesarias
 RUN apk update \
