@@ -1,6 +1,5 @@
 # Dockerfile para producción
 FROM php:7.1-fpm-alpine
-
 # Instalar dependencias necesarias
 RUN apk update \
     && apk add --no-cache --update linux-headers ${PHPIZE_DEPS} \
@@ -16,6 +15,10 @@ RUN apk update \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install -j$(nproc) gd \
     && docker-php-ext-install opcache
+
+
+#copiar la configuración de php
+COPY ./docker/php/custom-php.ini /usr/local/etc/php/conf.d/
 
 # Configuración de directorio de trabajo
 WORKDIR /var/www
