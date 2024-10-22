@@ -73,8 +73,8 @@
     <script>
 
         AWS.config.update({
-            accessKeyId : 'AKIA6K5V7SM22IEAEPNO',
-            secretAccessKey : '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'
+            accessKeyId : '',
+            secretAccessKey : ''
         });
 
         function UploadS3(response)
