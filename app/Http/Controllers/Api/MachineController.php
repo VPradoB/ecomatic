@@ -329,6 +329,7 @@ class MachineController extends Controller
                 '" , "value": '.$tank->product_values.
                 ', "min_value": '.$tank->min_product_values.
                 ', "tank_status": '.$tank->status.
+                ',"product_id":'.$tank->product_id.
                 ', "tank_alert": '.$tank->alert.
                 '},';
             $index++;
